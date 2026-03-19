@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karishma Yadav | Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="fade-in">
+    <div class="nav-wrapper">
+        <nav>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="#tech-stack">Tech Stack</a>
+                <a href="projects.html">Projects</a>
+                <a href="experience.html">Experience & Education</a>
+                <a href="#contact">Get In Touch</a>
+            </div>
+            <div class="nav-socials">
+                <a href="https://github.com/karishma108" target="_blank">GitHub</a>
+                <a href="https://codolio.com/profile/Karishma@108" target="_blank">Codolio</a>
+            </div>
+        </nav>
+    </div>
+
+    <div id="heatmap-container" class="heatmap-modal hidden">
+        <div class="heatmap-content">
+            <span class="close-btn" onclick="toggleHeatmap()">&times;</span>
+            <h3>My Codolio Heatmap</h3>
+            <img src="https://codolio.com/api/heatmap?username=Karishma@108" alt="Codolio Heatmap">
+        </div>
+    </div>
+
+    <header class="hero-section container slide-up">
+        <div class="hero-content">
+            <h1 class="hero-title">Karishma Yadav</h1>
+            <p class="hero-desc">Full Stack Developer | Mumbai, India. Specialized in React.js, Node.js, and Spring Boot. Building scalable web applications and solving complex algorithms.</p>
+            <a href="projects.html" class="btn-primary">View My Work ></a>
+        </div>
+        <div class="hero-image hover-scale">
+            <img src="profile.jpg" alt="Karishma Yadav" onerror="this.src='https://via.placeholder.com/350';">
+        </div>
+    </header>
+
+    <section id="tech-stack" class="worked-with container slide-up-delay">
+        <p class="section-label">Technical Stack</p>
+        <div class="logos">
+            <div class="logo-box" onclick="this.classList.toggle('active-tech')">MERN</div>
+            <div class="logo-box" onclick="this.classList.toggle('active-tech')">React</div>
+            <div class="logo-box" onclick="this.classList.toggle('active-tech')">Express</div>
+            <div class="logo-box" onclick="this.classList.toggle('active-tech')">Node.js</div>
+            <div class="logo-box" onclick="this.classList.toggle('active-tech')">Git</div>
+            <div class="logo-box" onclick="this.classList.toggle('active-tech')">Java</div>
+            <div class="logo-box" onclick="this.classList.toggle('active-tech')">C</div>
+            <div class="logo-box" onclick="this.classList.toggle('active-tech')">SQL</div>
+            <div class="logo-box" onclick="this.classList.toggle('active-tech')">MongoDB</div>
+        </div>
+    </section>
+
+    <footer id="contact" class="container slide-up-delay">
+        <div class="contact-section card">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to discussing web development work or partnership opportunities.</p>
+            <div class="contact-details">
+                <p><strong>Email:</strong> <a href="mailto:kariyadav1239@gmail.com">kariyadav1239@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+917738142010">+91 7738142010</a></p>
+                <p><strong>Location:</strong> Mumbai, India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleHeatmap() {
+            const container = document.getElementById('heatmap-container');
+            container.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
